@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
   /* Background pattern from toptal.com */
-  background-image: url("/images/y-so-serious-white.png");
+  background-image: url("images/y-so-serious-white.png");
   font-family: 'Lato', sans-serif;
   margin: 0;
   font-size: 18px;
