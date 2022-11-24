@@ -1,4 +1,5 @@
 const darkMode = document.querySelector(".darkMode");
+document.body.style.backgroundImage = "url('/images/y-so-serious-white.png')";
 
 darkMode.addEventListener('click', (event) => {
     event.preventDefault();
