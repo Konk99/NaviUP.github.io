@@ -11,7 +11,7 @@ body {
     //background-image: url("/images/y-so-serious.png");
     color: grey;
     //font-size: 24px;
-    position: absolute;
+    position: fixed;
     font-size: 24px;
     right: 1%;
     top: 8%;
@@ -58,7 +58,7 @@ body {
     color: white;
     text-align: left;
     height: inherit;
-    
+    align-self: center;
     > img {
         height: inherit;
     }
@@ -90,6 +90,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .tile {
@@ -174,4 +175,18 @@ footer {
     text-align: center;
     margin-left: -10px;
     padding: 15px;
+}
+
+/* Media */
+
+@media screen and (max-width: 640px) {
+    .navbar a {
+        > h1 {
+            display: none;
+        }
+
+        > .upwr{
+            content: url('https://konk99.github.io/NaviUP.github.io/images/upwr-logotyp.png');
+        }
+    }
 }
