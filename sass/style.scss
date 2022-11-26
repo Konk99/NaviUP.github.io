@@ -5,6 +5,8 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     font-size: 18px;
+    cursor: url('https://konk99.github.io/NaviUP.github.io/images/cursor.png'), auto;
+    height: 100vh;
 }
 
 .darkMode {
@@ -49,6 +51,11 @@ body {
 
     > img {
         height: inherit;
+    }
+
+    > .logo {
+        height: 70%;
+        align-self: center;
     }
   }
 
