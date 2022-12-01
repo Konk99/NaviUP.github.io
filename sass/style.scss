@@ -80,14 +80,51 @@ body {
 
 /* Seach */
 
-#searchBox {
+.searchBox {
     margin-bottom: 10px;
     border-radius: 15px;
     font-size: 16px;
 }
 
-#searchBox:hover {
+.searchBox:hover {
     border-color: aqua;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 1.2em;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 150px;
+    overflow: auto;
+}
+  
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4;
+    z-index: 99;
+}
+  
+.autocomplete-items div:hover {
+    background-color: #46caee; 
+}
+  
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
 }
 
 /* Tiles */
@@ -138,7 +175,7 @@ body {
     color: rgb(36, 36, 36);
     background-color: white;
     font-size: 16px;
-    opacity: 0.8;
+    //opacity: 0.8;
     float: left;
     text-align: center;
     /* outline-style: dashed; */
