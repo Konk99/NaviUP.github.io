@@ -41,7 +41,11 @@
             <div class = "tiles">
                 <h2>Sala</h2  >
                 <p>Znajdź salę</p>
-                <input type="text" placeholder="Szukam..." name="search" id="searchBox" class="searchBox">
+                <form  autocomplete="off">
+                    <div class="autocomplete">
+                        <input type="text" placeholder="Szukam..." name="search" id="rooms" class="searchBox">
+                    </div>
+                </form>
                 <a href="#" class="button">Znajdź</a>
             </div>
             <div class = "tiles">
@@ -55,6 +59,6 @@
     <footer>
         SKN Uniwersytetu Przyrodniczego we Wrocławiu &copy; 2022. All rights reserved</br>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
 </body>
 </html>
