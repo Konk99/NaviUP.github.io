@@ -19,6 +19,11 @@ darkMode.addEventListener('click', (event) => {
 function autocomplete(inp, arr){
     let currrentFocus;
 
+    inp.addEventListener('click', () => {
+        inp.focus();
+        inp.select();
+    })
+
     inp.addEventListener('input', function(event){
         var a, b, i, value = this.value;
     
@@ -46,6 +51,7 @@ function autocomplete(inp, arr){
                     inp.value = this.getElementsByTagName('input')[0].value;
 
                     closeAllLists();
+                    resizeMe.call(inp);
                 });
                 a.appendChild(b);
             }
@@ -106,3 +112,16 @@ function autocomplete(inp, arr){
 
 autocomplete(document.getElementById('people'), people);
 autocomplete(document.getElementById('rooms'), rooms);
+
+const inputs = document.querySelectorAll('.searchBox');
+for(let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('input', resizeMe);
+}
+
+function resizeMe() {
+    if(this.value.length > 10){
+        this.style.width = this.value.length + 'ch';
+    } else {
+        this.style.width = '40%';
+    }
+}

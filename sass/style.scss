@@ -84,6 +84,14 @@ body {
     margin-bottom: 10px;
     border-radius: 15px;
     font-size: 16px;
+    min-width: 40%;
+    width: 40%;
+    transition: width 1s;
+    max-width: 80%;
+}
+
+.searchBox:focus {
+    transition: width 1s;
 }
 
 .searchBox:hover {
@@ -93,6 +101,7 @@ body {
 .autocomplete {
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
 .autocomplete-items {
@@ -135,7 +144,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .tile {
@@ -163,7 +172,7 @@ body {
 }
 
 .tiles {
-    width: 250px;
+    width: 40%;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
@@ -180,6 +189,14 @@ body {
     text-align: center;
     /* outline-style: dashed; */
     box-shadow: 1px 1px 30px;
+}
+
+.tiles:first-of-type {
+    margin-left: 0;
+}
+
+.tiles:last-of-type {
+    margin-right: 0;
 }
 
 .button {
@@ -224,6 +241,35 @@ footer {
 
 /* Media */
 
+@media screen and (max-width: 1420px){
+    .smollTiles {
+        justify-content: center;
+    }
+
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .smollTiles {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .tiles {
+        width: 90%;
+    }
+
+    .tiles:first-of-type {
+        margin-left: 30px;
+    }
+
+    .tiles:last-of-type {
+        margin-right: 30px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .navbar a {
         > h1 {
@@ -234,14 +280,8 @@ footer {
             content: url('https://konk99.github.io/NaviUP.github.io/images/upwr-logotyp.png');
         }
     }
-}
 
-@media screen and (max-width: 1420px){
-    .smollTiles {
-        justify-content: center;
-    }
-
-    .container {
+    .tiles {
         width: 80%;
     }
 }
