@@ -24,29 +24,40 @@
     </div>
     <div class="container">
         <div class = "tile">
-            <h1>Czego szukasz?</h1>
+            <h1>Gdzie jesteś?</h1>
+            <p>Podaj lokalizajcę</p>
+            <form autocomplete="off">
+                <div class="autocomplete">
+                    <input type="text" placeholder="Jestem w..." name="search" id="start" class="searchBox">
+                </div>
+            </form>
         </div>
-        <i class="fa fa-moon-o darkMode"></i>
-        <div class="smollTiles">
-            <div class = "tiles">
-                <h2>Wykładowca</h2  >
-                <p>Znajdź wykładowcę</p>
-                <form autocomplete="off">
-                    <div class="autocomplete">
-                        <input type="text" placeholder="Szukam..." name="search" id="people" class="searchBox">
-                    </div>
-                </form>
-                <a href="#" class="button">Znajdź</a>
+        <div class="to-go-wrapper none">
+            <div class = "tile">
+                <h1>Czego szukasz?</h1>
             </div>
-            <div class = "tiles">
-                <h2>Sala</h2  >
-                <p>Znajdź salę</p>
-                <form  autocomplete="off">
-                    <div class="autocomplete">
-                        <input type="text" placeholder="Szukam..." name="search" id="rooms" class="searchBox">
-                    </div>
-                </form>
-                <a href="#" class="button">Znajdź</a>
+            <i class="fa fa-moon-o darkMode"></i>
+            <div class="smollTiles">
+                <div class = "tiles">
+                    <h2>Wykładowca</h2  >
+                    <p>Znajdź wykładowcę</p>
+                    <form autocomplete="off">
+                        <div class="autocomplete">
+                            <input type="text" placeholder="Szukam..." name="search" id="people" class="searchBox">
+                        </div>
+                    </form>
+                    <a href="#" class="button">Znajdź</a>
+                </div>
+                <div class = "tiles">
+                    <h2>Sala</h2  >
+                    <p>Znajdź salę</p>
+                    <form  autocomplete="off">
+                        <div class="autocomplete">
+                            <input type="text" placeholder="Szukam..." name="search" id="rooms" class="searchBox">
+                        </div>
+                    </form>
+                    <a href="#" class="button">Znajdź</a>
+                </div>
             </div>
         </div>
     </div>

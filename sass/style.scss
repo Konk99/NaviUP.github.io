@@ -1,3 +1,5 @@
+$base-color: rgb(19, 130, 234);
+
 body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
     /* Background pattern from toptal.com */
@@ -25,7 +27,7 @@ body {
 .navbar {
     z-index: 100;
     overflow: hidden;
-    background-color: rgb(19, 130, 234);
+    background-color: $base-color;
     font-family: 'Lato', sans-serif;
     //text-align: center;
     opacity: 0.9;
@@ -106,8 +108,8 @@ body {
 
 .autocomplete-items {
     position: absolute;
-    border: 1px solid #d4d4d4;
-    border-bottom: none;
+    border: 2px solid $base-color;
+    //border-bottom: none;
     border-top: none;
     border-radius: 1.2em;
     z-index: 99;
@@ -117,6 +119,13 @@ body {
     right: 0;
     max-height: 150px;
     overflow: auto;
+    //No scrollbar
+    -ms-overflow-style: none; //IE i Edge
+    scrollbar-width: none; //Firefox
+}
+
+.autocomplete-items::-webkit-scrollbar {
+    display: none; //Chrome, Safari, Opera
 }
   
 .autocomplete-items div {
@@ -124,7 +133,6 @@ body {
     cursor: pointer;
     background-color: #fff; 
     border-bottom: 1px solid #d4d4d4;
-    z-index: 99;
 }
   
 .autocomplete-items div:hover {
@@ -132,7 +140,7 @@ body {
 }
   
 .autocomplete-active {
-    background-color: DodgerBlue !important; 
+    background-color: $base-color !important; 
     color: #ffffff; 
 }
 
@@ -145,6 +153,26 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 70px;
+    transition: width 2s;
+}
+
+.to-go-wrapper {
+    width: 100%;
+    opacity: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    transition: opacity 1s;
+    z-index: 0;
+    > .tile {
+        margin-top: 20px;
+    }
+}
+
+.none {
+    opacity: 0;
+    z-index: -1;
 }
 
 .tile {
@@ -201,7 +229,7 @@ body {
 
 .button {
     display: block;
-    background-color: rgb(25, 105, 226);
+    background-color: $base-color;
     color: white;
     padding: 12px;
     border-radius: 10px;

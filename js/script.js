@@ -22,6 +22,7 @@ function autocomplete(inp, arr){
     inp.addEventListener('click', () => {
         inp.focus();
         inp.select();
+        wrapperVisibility('nope', inp.getAttribute('id'));
     })
 
     inp.addEventListener('input', function(event){
@@ -51,6 +52,7 @@ function autocomplete(inp, arr){
                     inp.value = this.getElementsByTagName('input')[0].value;
 
                     closeAllLists();
+                    wrapperVisibility(true, inp.getAttribute('id'));
                     resizeMe.call(inp);
                 });
                 a.appendChild(b);
@@ -112,6 +114,18 @@ function autocomplete(inp, arr){
 
 autocomplete(document.getElementById('people'), people);
 autocomplete(document.getElementById('rooms'), rooms);
+autocomplete(document.getElementById('start'), rooms);
+
+const tileWrapper = document.querySelector('.to-go-wrapper');
+
+function wrapperVisibility(isVisible, id) {
+    console.log(id);
+    if(isVisible == true && id == 'start'){
+        tileWrapper.classList.remove('none');
+    } else if(id == 'start'){
+        tileWrapper.classList.add('none');
+    }
+}
 
 const inputs = document.querySelectorAll('.searchBox');
 for(let i = 0; i < inputs.length; i++) {

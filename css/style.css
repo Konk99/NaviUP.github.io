@@ -107,8 +107,7 @@ body {
 
 .autocomplete-items {
   position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
+  border: 2px solid #1382ea;
   border-top: none;
   border-radius: 1.2em;
   z-index: 99;
@@ -118,6 +117,12 @@ body {
   right: 0;
   max-height: 150px;
   overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.autocomplete-items::-webkit-scrollbar {
+  display: none;
 }
 
 .autocomplete-items div {
@@ -125,7 +130,6 @@ body {
   cursor: pointer;
   background-color: #fff;
   border-bottom: 1px solid #d4d4d4;
-  z-index: 99;
 }
 
 .autocomplete-items div:hover {
@@ -133,7 +137,7 @@ body {
 }
 
 .autocomplete-active {
-  background-color: DodgerBlue !important;
+  background-color: #1382ea !important;
   color: #ffffff;
 }
 
@@ -145,6 +149,27 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   margin-bottom: 70px;
+  transition: width 2s;
+}
+
+.to-go-wrapper {
+  width: 100%;
+  opacity: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  transition: opacity 1s;
+  z-index: 0;
+}
+
+.to-go-wrapper > .tile {
+  margin-top: 20px;
+}
+
+.none {
+  opacity: 0;
+  z-index: -1;
 }
 
 .tile {
@@ -199,7 +224,7 @@ body {
 
 .button {
   display: block;
-  background-color: #1969e2;
+  background-color: #1382ea;
   color: white;
   padding: 12px;
   border-radius: 10px;
