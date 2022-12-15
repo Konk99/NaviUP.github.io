@@ -149,17 +149,24 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   margin-bottom: 70px;
-  transition: width 2s;
+  transition: width 2s, height 2s;
+  height: 330px;
+}
+
+.wide {
+  height: 763.033px;
 }
 
 .to-go-wrapper {
+  position: relative;
+  top: 0%;
   width: 100%;
   opacity: 1;
-  display: flex;
+  display: none;
   flex-flow: row wrap;
   justify-content: center;
   margin: auto;
-  transition: opacity 1s;
+  transition: opacity 1s, top 1s;
   z-index: 0;
 }
 
@@ -168,6 +175,8 @@ body {
 }
 
 .none {
+  position: relative;
+  top: 5%;
   opacity: 0;
   z-index: -1;
 }
@@ -186,6 +195,7 @@ body {
   text-align: center;
   /* outline-style: dashed; */
   box-shadow: 1px 1px 30px;
+  height: 180px;
 }
 
 .smollTiles {
@@ -262,6 +272,13 @@ footer {
   padding: 15px;
 }
 
+/* Canvas */
+canvas {
+  margin: auto;
+  margin-bottom: 70px;
+  padding: 0;
+}
+
 /* Media */
 @media screen and (max-width: 1420px) {
   .smollTiles {
@@ -297,6 +314,12 @@ footer {
   }
   .tiles {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .tile {
+    height: 220px;
   }
 }
 

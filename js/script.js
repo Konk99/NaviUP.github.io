@@ -119,10 +119,13 @@ autocomplete(document.getElementById('start'), rooms);
 const tileWrapper = document.querySelector('.to-go-wrapper');
 
 function wrapperVisibility(isVisible, id) {
-    console.log(id);
     if(isVisible == true && id == 'start'){
-        tileWrapper.classList.remove('none');
+        document.querySelector('.container').classList.add('wide')
+        setTimeout(() => {tileWrapper.classList.remove('none')}, 1000);
+        tileWrapper.style.display = 'flex';
     } else if(id == 'start'){
+        document.querySelector('.container').classList.remove('wide');
+        setTimeout(() => {tileWrapper.style.display = 'none'}, 1000);
         tileWrapper.classList.add('none');
     }
 }
