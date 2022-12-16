@@ -1,0 +1,79 @@
+{
+	"asset" : {
+		"generator" : "FME 2022.2.0.0",
+		"version" : "2.0"
+	},
+	"materials" : [
+		{
+			"name" : "default_material",
+			"pbrMetallicRoughness" : {
+				"baseColorFactor" : [ 1, 1, 1, 1 ],
+				"roughnessFactor" : 0.30000000000000004,
+				"metallicFactor" : 0.5
+			}
+		}
+	],
+	"meshes" : [
+		{
+			"primitives" : [
+				{
+					"attributes" : {
+						"POSITION" : 0,
+						"COLOR_0" : 1
+					},
+					"material" : 0,
+					"mode" : 3
+				}
+			]
+		}
+	],
+	"nodes" : [
+		{
+			"mesh" : 0
+		}
+	],
+	"scenes" : [
+		{
+			"nodes" : [ 0 ]
+		}
+	],
+	"scene" : 0,
+	"accessors" : [
+		{
+			"bufferView" : 0,
+			"byteOffset" : 0,
+			"componentType" : 5126,
+			"count" : 127,
+			"type" : "VEC3",
+			"min" : [ 3089.040771484375, 0, 523.2802124023438 ],
+			"max" : [ 4316.97412109375, 1500, 3573.2802734375 ]
+		},
+		{
+			"bufferView" : 1,
+			"byteOffset" : 0,
+			"componentType" : 5126,
+			"count" : 127,
+			"type" : "VEC3"
+		}
+	],
+	"bufferViews" : [
+		{
+			"buffer" : 0,
+			"byteOffset" : 0,
+			"byteLength" : 1524,
+			"target" : 34962
+		},
+		{
+			"buffer" : 0,
+			"byteOffset" : 1524,
+			"byteLength" : 1524,
+			"target" : 34962
+		}
+	],
+	"buffers" : [
+		{
+			"uri" : "35_117.bin",
+			"byteLength" : 3048
+		}
+	]
+}
