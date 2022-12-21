@@ -3,7 +3,7 @@ import {OrbitControls} from '../vendor/three/examples/jsm/controls/OrbitControls
 import { GLTFLoader } from '../vendor/three/examples/jsm/loaders/GLTFLoader.js';
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xddddd);
+scene.background = new THREE.Color(0x000000);
 
 const camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight,1,5000);
 camera.position.y = 45/180*Math.Pi;
@@ -12,7 +12,20 @@ camera.position.y = 100;
 camera.position.z = 1000;
 
 const loader = new GLTFLoader();
-loader.load('../vendor/models/Pomieszczenia.gltf',function(gltf){
+// For local work
+/*
+loader.load('../vendor/paths/1_2.gltf',function(gltf){
+    const model = gltf.scene.children[0];
+    model.scale.set(0.1,0.1,0.1);
+    model.color = new THREE.Color(0xC9B41B);
+    scene.add(gltf.scene);
+    console.log(gltf);
+    animate();
+    },
+    function (xhr) {
+        console.log((xhr.loaded/xhr.total * 100) + '% loaded');
+    });
+loader.load('../vendor/models/Schody.gltf',function(gltf){
     const model = gltf.scene;
     model.scale.set(0.1,0.1,0.1);
     scene.add(gltf.scene);
@@ -22,8 +35,48 @@ loader.load('../vendor/models/Pomieszczenia.gltf',function(gltf){
     function (xhr) {
         console.log((xhr.loaded/xhr.total * 100) + '% loaded');
     });
-
-
+loader.load('../vendor/models/Winda.gltf',function(gltf){
+    const model = gltf.scene;
+    model.scale.set(0.1,0.1,0.1);
+    scene.add(gltf.scene);
+    console.log(gltf);
+    animate();
+    },
+    function (xhr) {
+        console.log((xhr.loaded/xhr.total * 100) + '% loaded');
+    });*/
+// For Server
+loader.load('../../NaviUP.github.io/vendor/paths/1_2.gltf',function(gltf){
+    const model = gltf.scene.children[0];
+    model.scale.set(0.1,0.1,0.1);
+    model.color = new THREE.Color(0xC9B41B);
+    scene.add(gltf.scene);
+    console.log(gltf);
+    animate();
+    },
+    function (xhr) {
+        console.log((xhr.loaded/xhr.total * 100) + '% loaded');
+    });
+loader.load('../../NaviUP.github.io/vendor/models/Schody.gltf',function(gltf){
+    const model = gltf.scene;
+    model.scale.set(0.1,0.1,0.1);
+    scene.add(gltf.scene);
+    console.log(gltf);
+    animate();
+    },
+    function (xhr) {
+        console.log((xhr.loaded/xhr.total * 100) + '% loaded');
+    });
+loader.load('../../NaviUP.github.io/vendor/models/Winda.gltf',function(gltf){
+    const model = gltf.scene;
+    model.scale.set(0.1,0.1,0.1);
+    scene.add(gltf.scene);
+    console.log(gltf);
+    animate();
+    },
+    function (xhr) {
+        console.log((xhr.loaded/xhr.total * 100) + '% loaded');
+    });
 const renderer = new THREE.WebGLRenderer({antialias:true});
 renderer.setSize(window.innerWidth,window.innerHeight);
 document.body.appendChild(renderer.domElement);
