@@ -13,8 +13,8 @@ camera.position.z = 1000;
 
 const loader = new GLTFLoader();
 // For local work
-/*
-loader.load('../vendor/paths/1_2.gltf',function(gltf){
+
+loader.load('../vendor/paths/1_20.gltf',function(gltf){
     const model = gltf.scene.children[0];
     model.scale.set(0.1,0.1,0.1);
     model.color = new THREE.Color(0xC9B41B);
@@ -44,9 +44,9 @@ loader.load('../vendor/models/Winda.gltf',function(gltf){
     },
     function (xhr) {
         console.log((xhr.loaded/xhr.total * 100) + '% loaded');
-    });*/
+    });
 // For Server
-loader.load('../../NaviUP.github.io/vendor/paths/1_2.gltf',function(gltf){
+/*loader.load('../../NaviUP.github.io/vendor/paths/1_2.gltf',function(gltf){
     const model = gltf.scene.children[0];
     model.scale.set(0.1,0.1,0.1);
     model.color = new THREE.Color(0xC9B41B);
@@ -76,7 +76,7 @@ loader.load('../../NaviUP.github.io/vendor/models/Winda.gltf',function(gltf){
     },
     function (xhr) {
         console.log((xhr.loaded/xhr.total * 100) + '% loaded');
-    });
+    });*/
 const renderer = new THREE.WebGLRenderer({antialias:true});
 renderer.setSize(window.innerWidth,window.innerHeight);
 document.body.appendChild(renderer.domElement);
