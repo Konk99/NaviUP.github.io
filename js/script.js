@@ -123,7 +123,7 @@ function autocomplete(inp, arr){
 let peopleName = [];
 let roomsName = [];
 
-fetch('/db/app.json').then(function(rawResponse){
+fetch('/NaviUP.github.io/db/app.json').then(function(rawResponse){
     return rawResponse.json();
 }).then(function(parsedResponse){
     for(let i = 0; i < parsedResponse['people'].length; i++){
