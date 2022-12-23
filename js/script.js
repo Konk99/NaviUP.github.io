@@ -1,4 +1,3 @@
-import { people, rooms } from "./searchData.js";
 import { loadPath } from "./three.js";
 
 const darkMode = document.querySelector(".darkMode");
