@@ -172,12 +172,13 @@ const buttons = document.querySelectorAll('.button');
 for(let i = 0; i < buttons.length; i++){
     buttons[i].addEventListener('click', () => {
         id = idStart + '_' + idEnd;
+        
         setTimeout(() => {loadPath(id)}, 1500);
         document.querySelector('.container').classList.remove('wide');
         setTimeout(() => {tileWrapper.style.display = 'none'}, 1000);
         tileWrapper.classList.add('none');
-        const fields = document.querySelectorAll('input');
-        console.log(fields);
+
+        const fields = document.querySelectorAll('input');;
         setTimeout(() => {for(let i = 0; i < fields.length; i++){
             fields[i].value = '';
         }}, 1000);
