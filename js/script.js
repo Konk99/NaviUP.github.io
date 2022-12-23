@@ -1,4 +1,5 @@
 import { people, rooms } from "./searchData.js";
+import { loadPath } from "./three.js";
 
 const darkMode = document.querySelector(".darkMode");
 document.body.style.backgroundImage = document.querySelector('.backimg').getAttribute('src');
@@ -40,16 +41,24 @@ function autocomplete(inp, arr){
         this.parentNode.appendChild(a);
 
         for(i = 0; i < arr.length; i++){
-            if(arr[i].substr(0, value.length).toUpperCase() == value.toUpperCase()){
+            if(arr[i]['name'].substr(0, value.length).toUpperCase() == value.toUpperCase()){
                 b = document.createElement('DIV');
+                b.setAttribute('id', arr[i]['id']);
 
-                b.innerHTML = '<strong>' + arr[i].substr(0, value.length) + '</strong>';
-                b.innerHTML += arr[i].substr(value.length)
+                b.innerHTML = '<strong>' + arr[i]['name'].substr(0, value.length) + '</strong>';
+                b.innerHTML += arr[i]['name'].substr(value.length);
 
-                b.innerHTML += '<input type="hidden" value="' + arr[i] + '">';
+                b.innerHTML += '<input type="hidden" value="' + arr[i]['name'] + '">';
 
                 b.addEventListener('click', function(event){
                     inp.value = this.getElementsByTagName('input')[0].value;
+                    
+                    if(inp.id == 'start'){
+                        idStart = b.id;
+                    } else{
+                        idEnd = b.id;
+                        //buttons[0].click();
+                    }
 
                     closeAllLists();
                     wrapperVisibility(true, inp.getAttribute('id'));
@@ -76,7 +85,7 @@ function autocomplete(inp, arr){
         } else if(event.KeyCode == 13){
             event.preventDefault();
             if(currrentFocus > -1){
-                if (x) {x[currrentFocus].click()}
+                if (x) {x[currrentFocus].click();}
             }
         }
     });
@@ -112,9 +121,23 @@ function autocomplete(inp, arr){
     });
 }
 
-autocomplete(document.getElementById('people'), people);
-autocomplete(document.getElementById('rooms'), rooms);
-autocomplete(document.getElementById('start'), rooms);
+let peopleName = [];
+let roomsName = [];
+
+fetch('/db/app.json').then(function(rawResponse){
+    return rawResponse.json();
+}).then(function(parsedResponse){
+    for(let i = 0; i < parsedResponse['people'].length; i++){
+        peopleName.push(parsedResponse['people'][i]);
+    }
+    for(let i = 0; i < parsedResponse['rooms'].length; i++){
+        roomsName.push(parsedResponse['rooms'][i]);
+    }
+})
+
+autocomplete(document.getElementById('people'), peopleName);
+autocomplete(document.getElementById('rooms'), roomsName);
+autocomplete(document.getElementById('start'), roomsName);
 
 const tileWrapper = document.querySelector('.to-go-wrapper');
 
@@ -124,6 +147,7 @@ function wrapperVisibility(isVisible, id) {
         setTimeout(() => {tileWrapper.classList.remove('none')}, 1000);
         tileWrapper.style.display = 'flex';
     } else if(id == 'start'){
+        if(document.querySelector('canvas')) {document.querySelector('canvas').remove()};
         document.querySelector('.container').classList.remove('wide');
         setTimeout(() => {tileWrapper.style.display = 'none'}, 1000);
         tileWrapper.classList.add('none');
@@ -141,4 +165,22 @@ function resizeMe() {
     } else {
         this.style.width = '40%';
     }
+}
+
+let id, idStart, idEnd;
+const buttons = document.querySelectorAll('.button');
+
+for(let i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener('click', () => {
+        id = idStart + '_' + idEnd;
+        setTimeout(() => {loadPath(id)}, 1500);
+        document.querySelector('.container').classList.remove('wide');
+        setTimeout(() => {tileWrapper.style.display = 'none'}, 1000);
+        tileWrapper.classList.add('none');
+        const fields = document.querySelectorAll('input');
+        console.log(fields);
+        setTimeout(() => {for(let i = 0; i < fields.length; i++){
+            fields[i].value = '';
+        }}, 1000);
+    });
 }

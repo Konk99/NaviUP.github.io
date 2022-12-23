@@ -1,0 +1,551 @@
+{
+    "people": [
+        {
+            "name": "Aghajany Haji Saeid",
+            "id": 63
+        },
+        {
+            "name": "Biegalski Jerzy",
+            "id": 87
+        },
+        {
+            "name": "Bogusławski Paweł",
+            "id": 81
+        },
+        {
+            "name": "Bosy Jarosław",
+            "id": 103
+        },
+        {
+            "name": "Bury Grzegorz",
+            "id": 112
+        },
+        {
+            "name": "Cegła Adam",
+            "id": 61
+        },
+        {
+            "name": "Ćmielewski Kazimierz",
+            "id": 39
+        },
+        {
+            "name": "Dach Wojciech",
+            "id": 57
+        },
+        {
+            "name": "Drożdżewski Mateusz",
+            "id": 114
+        },
+        {
+            "name": "Dziwoska Teresa",
+            "id": 62
+        },
+        {
+            "name": "Gałdyn Filip",
+            "id": 115
+        },
+        {
+            "name": "Gołuch Piotr",
+            "id": 23
+        },
+        {
+            "name": "Hadaś Edyta",
+            "id": 85
+        },
+        {
+            "name": "Hadaś Tomasz",
+            "id": 104
+        },
+        {
+            "name": "Hordyniec Barbara",
+            "id": 60
+        },
+        {
+            "name": "Hordyniec Paweł",
+            "id": 59
+        },
+        {
+            "name": "Ilieva Maya",
+            "id": 88
+        },
+        {
+            "name": "Iwaniak Adam",
+            "id": 80
+        },
+        {
+            "name": "Jamroz Olgierd",
+            "id": 87
+        },
+        {
+            "name": "Jarząbek-Rychard Małgorzata",
+            "id": 84
+        },
+        {
+            "name": "Jóźków Grzegorz",
+            "id": 78
+        },
+        {
+            "name": "Kaczmarek Adrian",
+            "id": 114
+        },
+        {
+            "name": "Kaplon Jan",
+            "id": 107
+        },
+        {
+            "name": "Karpina Mateusz",
+            "id": 37
+        },
+        {
+            "name": "Kaźmierski Kamil",
+            "id": 113
+        },
+        {
+            "name": "Kontny Bernard",
+            "id": 89
+        },
+        {
+            "name": "Kuchmister Janusz",
+            "id": 39
+        },
+        {
+            "name": "Marut Grzegorz",
+            "id": 113
+        },
+        {
+            "name": "Mehdi Saqib",
+            "id": 63
+        },
+        {
+            "name": "Michalski Adam",
+            "id": 86
+        },
+        {
+            "name": "Mikos Marcin",
+            "id": 115
+        },
+        {
+            "name": "Najder Joanna",
+            "id": 112
+        },
+        {
+            "name": "Owczarek-Wesołowska Magdalena",
+            "id": 54
+        },
+        {
+            "name": "Pawłuszek-Filipiak Kamila",
+            "id": 84
+        },
+        {
+            "name": "Piotrowicz Michał",
+            "id": 87
+        },
+        {
+            "name": "Porucznik Sylwia",
+            "id": 62
+        },
+        {
+            "name": "Rohm Witold",
+            "id": 58
+        },
+        {
+            "name": "Sierny Jan",
+            "id": 54
+        },
+        {
+            "name": "Smolak Kamil",
+            "id": 59
+        },
+        {
+            "name": "Sośnica Krzysztof",
+            "id": 106
+        },
+        {
+            "name": "Sowa Wojciech",
+            "id": 38
+        },
+        {
+            "name": "Stasch Krzysztof",
+            "id": 83
+        },
+        {
+            "name": "Strugarek Dariusz",
+            "id": 111
+        },
+        {
+            "name": "Tondas Damian",
+            "id": 61
+        },
+        {
+            "name": "Trojanowicz Marek",
+            "id": 24
+        },
+        {
+            "name": "Trzcina Estera",
+            "id": 60
+        },
+        {
+            "name": "Tymków Przemysław",
+            "id": 78
+        },
+        {
+            "name": "Walicka Agata",
+            "id": 85
+        },
+        {
+            "name": "Wielgocka Natalia",
+            "id": 83
+        },
+        {
+            "name": "Wilczyńska Izabela",
+            "id": 38
+        },
+        {
+            "name": "Zajdel Radosław",
+            "id": 111
+        },
+        {
+            "name": "Żukowski Wiktor",
+            "id": 4
+        }
+    ],
+
+    "rooms": [
+        {
+            "name": "01-Serwerownia",
+            "id": 1
+        },
+        {
+            "name": "02-Laboratorium",
+            "id": 2
+        },
+        {
+            "name": "03-Laboratorium",
+            "id": 3
+        },
+        {
+            "name": "04-Magazyn sprzętu geodezyjnego-Wiktor Żukowski",
+            "id": 4
+        },
+        {
+            "name": "05-Laboratorium",
+            "id": 5
+        },
+        {
+            "name": "06-Magazyn",
+            "id": 6
+        },
+        {
+            "name": "07-Toaleta",
+            "id": 7
+        },
+        {
+            "name": "021a-Węzeł cieplny",
+            "id": 16
+        },
+        {
+            "name": "021b-Pomieszczenie gospodarcze",
+            "id": 18
+        },
+        {
+            "name": "022-Warsztat naprawy sprzętów geodezyjnych-Wiktor Żukowski",
+            "id": 19
+        },
+        {
+            "name": "023-Gabinet SKN Geodetów",
+            "id": 20
+        },
+        {
+            "name": "024-Magazyn",
+            "id": 22
+        },
+        {
+            "name": "025-Magazyn",
+            "id": 23
+        },
+        {
+            "name": "1-Gabinet-dr hab. inż. Marek Trojanowicz, prof. UPWr",
+            "id": 24
+        },
+        {
+            "name": "2-Serwerownia'",
+            "id": 25
+        },
+        {
+            "name": "3-Laboratorium",
+            "id": 26
+        },
+        {
+            "name": "4-Pokój gospodarczy",
+            "id": 27
+        },
+        {
+            "name": "5-Toaleta męska",
+            "id": 28
+        },
+        {
+            "name": "6-Toaleta damska",
+            "id": 35
+        },
+        {
+            "name": "22-Gabinet",
+            "id": 41
+        },
+        {
+            "name": "23-Gabinet-dr hab. inż. Piotr Gołuch, prof. UPWr",
+            "id": 40
+        },
+        {
+            "name": "25-Gabinet-mgr inż. Mateusz Karpina",
+            "id": 37
+        },
+        {
+            "name": "24-Gabinet-dr hab. Kazimierz Ćmielewski, dr inż. Janusz Kuchmister",
+            "id": 39
+        },
+        {
+            "name": "25a-Gabinet-dr inż. Izabela Wilczyńska, mgr inż. Wojciech Sowa",
+            "id": 38
+        },
+        {
+            "name": "100-Biblioteka IGIG",
+            "id": 55
+        },
+        {
+            "name": "101-Serwerownia/Gabinet-mgr inż. Jan Sierny, mgr inż. Magdalena Owczarek-Wesołowska",
+            "id": 54
+        },
+        {
+            "name": "102-Sala dydaktyczna",
+            "id": 53
+        },
+        {
+            "name": "103-Toaleta męska",
+            "id": 52
+        },
+        {
+            "name": "104-Toaleta damska",
+            "id": 44
+        },
+        {
+            "name": "121-Gabinet-Saqib Mehdi, dr Saeid Haji Aghajany",
+            "id": 63
+        },
+        {
+            "name": "122-Gabinet-dr inż. Sylwia Porucznik, dr inż. Teresa Dzikowska",
+            "id": 62
+        },
+        {
+            "name": "123-Gabinet-mgr inż. Adam Cegła, mgr inż. Damian Tondas",
+            "id": 61
+        },
+        {
+            "name": "124-Gabinet-mgr inż. Estera Trzcina, mgr inż. Barbara Hordyniec",
+            "id": 60
+        },
+        {
+            "name": "125-Gabinet-dr inż. Kamil Smolak, dr inż. Pawel Hordyniec",
+            "id": 59
+        },
+        {
+            "name": "126-Gabinet-mgr inż. Wojciech Dach",
+            "id": 57
+        },
+        {
+            "name": "126a-Gabinet-prof. dr hab. inż. Witold Rohm",
+            "id": 58
+        },
+        {
+            "name": "127-Gabinet",
+            "id": 56
+        },
+        {
+            "name": "200a-Gabinet-dr inż. Paweł Bogusławski",
+            "id": 81
+        },
+        {
+            "name": "200b-Gabinet-dr hab. inż. Adam Iwaniak",
+            "id": 80
+        },
+        {
+            "name": "200c-Gabinet-dr hab. inż. Grzegorz Jóźków prof. UPWr, dr inż. Przemysóaw Tymków",
+            "id": 78
+        },
+        {
+            "name": "201-Pomieszczenie socjalne",
+            "id": 77
+        },
+        {
+            "name": "202-Sala dydaktyczna",
+            "id": 76
+        },
+        {
+            "name": "203-Toaleta męska",
+            "id": 75
+        },
+        {
+            "name": "204-Toaleta damska",
+            "id": 68
+        },
+        {
+            "name": "219-Gabinet-prof. dr hab. inż. Bernard Kontny",
+            "id": 89
+        },
+        {
+            "name": "220-Gabinet-dr inż. Olgierd Jamroz, mgr inż. Michał Piotrowicz, mgr inż. Jerzy Biegalski",
+            "id": 87
+        },
+        {
+            "name": "221-Gabinet-dr inż. Adam Michalski",
+            "id": 86
+        },
+        {
+            "name": "222-Gabinet-dr inż. Edyta Hadaś, dr inż. Agata Walicka",
+            "id": 85
+        },
+        {
+            "name": "223-Gabinet-dr inż. Maya Ilieva",
+            "id": 88
+        },
+        {
+            "name": "224-Gabinet-dr inż. Malgorzata Jarząbek-Rychard, dr inż. Kamila Pawłuszek-Filipak",
+            "id": 84
+        },
+        {
+            "name": "225-Gabinet-mgr inż. Natalia Wielgocka, mgr inż. Krzysztof Stasch",
+            "id": 83
+        },
+        {
+            "name": "226-Stacja GPS",
+            "id": 82
+        },
+        {
+            "name": "300-Gabinet-dr hab. inż. Jan Kapłon, prof. UPWr",
+            "id": 107
+        },
+        {
+            "name": "301-Gabinet-prof. dr hab. inż. Krzysztof Sośnica",
+            "id": 106
+        },
+        {
+            "name": "302-Gabinet-dr hab. inż. Tomasz Hadaś, prof. UPWr",
+            "id": 104
+        },
+        {
+            "name": "303-Gabinet-prof. dr hab. inż. Jarosław Bosy",
+            "id": 103
+        },
+        {
+            "name": "304-Sala seminaryjna",
+            "id": 102
+        },
+        {
+            "name": "305-Gabinet (katedra matematyki)",
+            "id": 101
+        },
+        {
+            "name": "306-Toaleta damska",
+            "id": 93
+        },
+        {
+            "name": "307-Toaleta męska",
+            "id": 100
+        },
+        {
+            "name": "324-Gabinet-dr inż. Adrian Kaczmarek, dr inż. Mateusz Drożdżewski",
+            "id": 114
+        },
+        {
+            "name": "325-Gabinet-mgr inż. Marcin Mikos, mgr inż. Filip Gałdyn",
+            "id": 115
+        },
+        {
+            "name": "326-Gabinet-dr inż. Kamil Kaźmierski, mgr inż. Grzegorz Marut",
+            "id": 113
+        },
+        {
+            "name": "327-Gabinet-mgr inż. Joanna Najder, dr inż.  Grzegorz Bury",
+            "id": 112
+        },
+        {
+            "name": "328-Gabinet-dr inż. Radosław Zajdel, dr inż. Dariusz Strugarek",
+            "id": 111
+        },
+        {
+            "name": "329-Kuchnia",
+            "id": 109
+        },
+        {
+            "name": "329a-Sala Konferencyjna",
+            "id": 110
+        },
+        {
+            "name": "330-Magazyn",
+            "id": 108
+        },
+        {
+            "name": "400a-Gabinet",
+            "id": 133
+        },
+        {
+            "name": "400b-Gabinet",
+            "id": 134
+        },
+        {
+            "name": "401-Gabinet",
+            "id": 132
+        },
+        {
+            "name": "402a-Gabinet",
+            "id": 130
+        },
+        {
+            "name": "402b-Gabinet",
+            "id": 129
+        },
+        {
+            "name": "403-Sala dydaktyczna",
+            "id": 128
+        },
+        {
+            "name": "404-Toaleta męska",
+            "id": 127
+        },
+        {
+            "name": "405-Toaleta damska",
+            "id": 120
+        },
+        {
+            "name": "418-Gabinet",
+            "id": 142
+        },
+        {
+            "name": "419-Gabinet",
+            "id": 141
+        },
+        {
+            "name": "420-Gabinet",
+            "id": 140
+        },
+        {
+            "name": "421-Gabinet",
+            "id": 139
+        },
+        {
+            "name": "422-Gabinet",
+            "id": 138
+        },
+        {
+            "name": "423-Gabinet",
+            "id": 137
+        },
+        {
+            "name": "424-Gabinet",
+            "id": 136
+        },
+        {
+            "name": "425-Gabinet",
+            "id": 135
+        }
+    ]
+}
